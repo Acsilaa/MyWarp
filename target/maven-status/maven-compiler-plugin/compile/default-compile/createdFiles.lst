@@ -1,10 +1,11 @@
 Commands\GWarp.class
-Commands\Setwarp.class
-me\mywarp\MyWarp.class
+Commands\DeleteWarp.class
 Commands\SetGlobalWarp.class
 Commands\WarpCompleter.class
-Utils\WarpUtil.class
-Commands\GWarpCompleter.class
 Commands\Warp.class
 Commands\GWarpDelete.class
+Commands\Setwarp.class
+me\mywarp\MyWarp.class
+Utils\WarpUtil.class
+Commands\GWarpCompleter.class
 Models\WarpModel.class
