@@ -23,3 +23,7 @@ commands:
     description: Teleports you to a global warp point with the given name.
     usage: /globalwarp <warpname>
     aliases: gwarp
+  deletewarp:
+    description: Deletes a given global warp point.
+    usage: /deletewarp <warpname>
+    aliases: delwarp

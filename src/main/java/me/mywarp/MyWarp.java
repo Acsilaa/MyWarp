@@ -52,6 +52,9 @@ public final class MyWarp extends JavaPlugin implements Listener {
         // warp
         getCommand("warp").setExecutor(new Warp());
         getCommand("warp").setTabCompleter(new WarpCompleter());
+        // delete warp
+        getCommand("deletewarp").setExecutor(new DeleteWarp());
+        getCommand("deletewarp").setTabCompleter(new WarpCompleter());
 
         Log("MyWarp has started!");
     }

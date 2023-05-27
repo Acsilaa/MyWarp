@@ -9,7 +9,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class GWarpDelete implements CommandExecutor {
+public class DeleteWarp implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!(sender instanceof Player)) {
@@ -18,12 +18,12 @@ public class GWarpDelete implements CommandExecutor {
         }
         if(args.length != 1) return false;
         Player player = ((Player) sender).getPlayer();
-        WarpModel warp = WarpUtil.readWarp(args[0], player.getDisplayName(), true);
+        WarpModel warp = WarpUtil.readWarp(args[0], player.getDisplayName(), false);
         if(warp == null){
             player.sendMessage(
                     ChatColor.YELLOW +
                             "[MyWarp] " +
-                    ChatColor.RED +
+                            ChatColor.RED +
                             "No such warp point exists."
             );
             return true;

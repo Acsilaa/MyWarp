@@ -18,8 +18,8 @@ public class GWarp implements CommandExecutor {
             return true;
         }
         if(args.length != 1) return false;
-        WarpModel model = WarpUtil.readWarp(args[0], true);
         Player player = ((Player) sender).getPlayer();
+        WarpModel model = WarpUtil.readWarp(args[0], player.getDisplayName(), true);
         if(model == null){
             player.sendMessage(
                     ChatColor.YELLOW +
