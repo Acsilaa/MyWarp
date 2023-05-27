@@ -1,0 +1,25 @@
+name: MyWarp
+version: '${project.version}'
+main: me.mywarp.MyWarp
+api-version: 1.19
+load: STARTUP
+
+commands:
+  setglobalwarp:
+    description: Sets a global warp point with a name.
+    usage: /setglobalwarp <warpname>
+    aliases: setgwarp
+  deleteglobalwarp:
+    description: Deletes a given global warp point.
+    usage: /deleteglobalwarp <warpname>
+    aliases: delgwarp
+  setwarp:
+    description: Sets a private warp point with a name.
+    usage: /setwarp <warpname>
+  warp:
+    description: Teleports you to a private warp point with the given name.
+    usage: /warp <warpname>
+  globalwarp:
+    description: Teleports you to a global warp point with the given name.
+    usage: /globalwarp <warpname>
+    aliases: gwarp
